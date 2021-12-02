@@ -20,7 +20,7 @@ function App() {
 
   const formSubmitHandler = (e) => {
     e.preventDefault()
-    if (event.id && event.name && event.subcategory && event.image && event.tags !== "") {
+    if (event.id && event.name && event.subcategory && event.tags !== "") {
       axios.post('http://localhost:2000/', event).then(res => {
         console.log(res)
       })
@@ -52,7 +52,7 @@ function App() {
           </div>
           <div className="w-full flex justify-start items-start flex-col  space-y-2">
             <label className="text-sm font-medium">Image</label>
-            <input className="w-full p-1 px-2 border  focus:outline-none rounded shadow-sm" value={event.image} onChange={(e) => onInputChange(e)} type="text" name="image" />
+            <input className="w-full p-1 px-2 border  focus:outline-none rounded shadow-sm" value={event.id} onChange={(e) => onInputChange(e)} type="text" name="id" />
           </div>
           <div className="w-full flex justify-start items-start flex-col  space-y-2">
             <label className="text-sm font-medium">Tags</label>
