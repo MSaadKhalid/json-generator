@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="2xl:container 2xl:mx-auto flex justify-center items-center flex-col py-12 lg:px-20 md:px-6 px-4 ">
       <h1 className="font-semibold text-lg py-4"> JSON Generator</h1>
-      <div className="w-96 rounded-md shadow-lg p-5 flex justify-start items-start flex-col space-y-4">
+      <div className="w-full md:w-2/3 xl:w-2/4  rounded-md shadow-lg p-5 flex justify-start items-start flex-col space-y-4">
         <form onSubmit={formSubmitHandler} className="w-full flex justify-start items-start flex-col  space-y-4">
           <div className="w-full flex justify-start items-start flex-col  space-y-2">
             <label className="text-sm font-medium">id</label>
